@@ -34,32 +34,15 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    FrameworksResEuicc_EU \
-    FrameworksResEuicc_ROW \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
-# Regional properties
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.EU.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.ROW.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24877/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24877/build.default.prop
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Telephony
-PRODUCT_PACKAGES += \
-    OplusEsimSwitcher \
-    OplusEuicc
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # Touch features
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
@@ -72,4 +55,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/oneplus/sm8850-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/macan/macan-vendor.mk)
+$(call inherit-product, vendor/oneplus/macanc/macanc-vendor.mk)
