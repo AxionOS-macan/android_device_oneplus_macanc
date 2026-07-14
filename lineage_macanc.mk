@@ -14,6 +14,17 @@ $(call inherit-product, device/oneplus/macanc/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# AxionAOSP
+AXION_MAINTAINER := Paul
+AXION_PROCESSOR := Snapdragon_8_Gen_5
+AXION_CAMERA_REAR_INFO := 50,8
+AXION_CAMERA_FRONT_INFO := 16
+BYPASS_CHARGE_SUPPORTED := true
+BYPASS_CHARGE_TOGGLE_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
+PERF_DEFAULT_GOV := walt
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+
 PRODUCT_NAME := lineage_macanc
 PRODUCT_DEVICE := macanc
 PRODUCT_MANUFACTURER := OnePlus
