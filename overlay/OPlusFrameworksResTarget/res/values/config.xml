@@ -25,7 +25,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.001954079</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.039215686</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -131,35 +131,35 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>6.0</item>    <!--      0 - 1     -->
-        <item>12.0</item>   <!--      1 - 6     -->
-        <item>30.0</item>   <!--      6 - 10    -->
-        <item>100.0</item>  <!--     10 - 20    -->
-        <item>140.0</item>  <!--     20 - 30    -->
+        <item>95.0</item>   <!--      0 - 1     -->
+        <item>105.0</item>  <!--      1 - 6     -->
+        <item>115.0</item>  <!--      6 - 10    -->
+        <item>130.0</item>  <!--     10 - 20    -->
+        <item>145.0</item>  <!--     20 - 30    -->
         <item>160.0</item>  <!--     30 - 40    -->
-        <item>180.0</item>  <!--     40 - 50    -->
-        <item>200.0</item>  <!--     50 - 60    -->
-        <item>230.0</item>  <!--     60 - 70    -->
-        <item>240.0</item>  <!--     70 - 80    -->
-        <item>250.0</item>  <!--     80 - 90    -->
-        <item>260.0</item>  <!--     90 - 100   -->
-        <item>270.0</item>  <!--    100 - 150   -->
-        <item>280.0</item>  <!--    150 - 200   -->
-        <item>290.0</item>  <!--    200 - 300   -->
-        <item>300.0</item>  <!--    300 - 400   -->
-        <item>310.0</item>  <!--    400 - 500   -->
+        <item>175.0</item>  <!--     40 - 50    -->
+        <item>188.0</item>  <!--     50 - 60    -->
+        <item>200.0</item>  <!--     60 - 70    -->
+        <item>212.0</item>  <!--     70 - 80    -->
+        <item>224.0</item>  <!--     80 - 90    -->
+        <item>236.0</item>  <!--     90 - 100   -->
+        <item>248.0</item>  <!--    100 - 150   -->
+        <item>258.0</item>  <!--    150 - 200   -->
+        <item>270.0</item>  <!--    200 - 300   -->
+        <item>282.0</item>  <!--    300 - 400   -->
+        <item>295.0</item>  <!--    400 - 500   -->
         <item>320.0</item>  <!--    500 - 600   -->
-        <item>330.0</item>  <!--    600 - 700   -->
-        <item>340.0</item>  <!--    700 - 800   -->
-        <item>360.0</item>  <!--    800 - 900   -->
-        <item>380.0</item>  <!--    900 - 1000  -->
-        <item>420.0</item>  <!--   1000 - 1200  -->
-        <item>460.0</item>  <!--   1200 - 1400  -->
-        <item>500.0</item>  <!--   1400 - 1600  -->
-        <item>540.0</item>  <!--   1600 - 1700  -->
-        <item>580.0</item>  <!--   1700 - 1800  -->
-        <item>600.0</item>  <!--   1800 - 1900  -->
-        <item>660.0</item>  <!--   1900 - 2000  -->
+        <item>345.0</item>  <!--    600 - 700   -->
+        <item>370.0</item>  <!--    700 - 800   -->
+        <item>395.0</item>  <!--    800 - 900   -->
+        <item>420.0</item>  <!--    900 - 1000  -->
+        <item>455.0</item>  <!--   1000 - 1200  -->
+        <item>490.0</item>  <!--   1200 - 1400  -->
+        <item>525.0</item>  <!--   1400 - 1600  -->
+        <item>560.0</item>  <!--   1600 - 1700  -->
+        <item>595.0</item>  <!--   1700 - 1800  -->
+        <item>625.0</item>  <!--   1800 - 1900  -->
+        <item>655.0</item>  <!--   1900 - 2000  -->
         <item>680.0</item>  <!--   2000 - 4000  -->
         <item>700.0</item>  <!--   4000 - 7000  -->
         <item>720.0</item>  <!--   7000 - 10000 -->
