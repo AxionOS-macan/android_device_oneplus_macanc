@@ -6,7 +6,7 @@
 <resources>
     <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
          calculate the status bar height. -->
-    <dimen name="status_bar_height_default">24dp</dimen>
+    <dimen name="status_bar_height_default">32dp</dimen>
 
     <!-- Default paddings for content around the corners. -->
     <dimen name="rounded_corner_content_padding">84px</dimen>
