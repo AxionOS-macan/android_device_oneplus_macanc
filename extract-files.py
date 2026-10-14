@@ -131,6 +131,12 @@ blob_fixups: blob_fixups_user_type = {
         # 48 00 80 52 mov w8, #2
         # 08 00 80 52 mov w8, #0
         .call(blob_change_instruction, '48 00 80 52', '08 00 80 52', '_ZN4aidl7android8hardware5audio6effect20OplusSpatializerImplC2Ev'),
+    (
+        'odm/lib64/camera.oemlayer.healthmonitor.so',
+        'odm/lib64/camera.oemlayer.logger.so',
+        'odm/lib64/camera.oemlayer.uilayer.so',
+    ): blob_fixup()
+        .replace_needed('vendor.oplus.hardware.charger-V8-ndk.so', 'vendor.oplus.hardware.charger-V9-ndk.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
