@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-USE_PREBUILT_KERNEL ?= true
-
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 16886267904
 
@@ -21,11 +19,8 @@ TARGET_OTA_ASSERT_DEVICE := OP6117L1
 TARGET_SCREEN_DENSITY := 540
 
 # Kernel
-ifeq ($(USE_PREBUILT_KERNEL), true)
-include device/oneplus/macanc-kernel/BoardConfig.mk
-else
-TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_MACANC_DTB=y
-endif
+TARGET_KERNEL_BAZEL_FLAGS += --//vendor/oneplus/sm8850:dtbo_config=//vendor/oneplus/sm8850-devicetrees:macan_dtbo_config
+BOARD_KERNEL_CMDLINE += qcom_dload_mode.download_mode=0
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
