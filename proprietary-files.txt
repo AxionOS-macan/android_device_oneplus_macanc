@@ -45,7 +45,7 @@ odm/lib64/libtfa98xx.so
 
 # Audio configs
 odm/etc/audio/OcaiConfig.xml
-odm/etc/mixer_paths.xml
+odm/etc/mixer_paths.xml:vendor/etc/audio/sku_alor/mixer_paths_alor_mtp.xml;TRYSRCFIRST
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
 
