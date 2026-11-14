@@ -1470,7 +1470,7 @@ vendor/lib64/libtfestriping.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_DEPS
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
