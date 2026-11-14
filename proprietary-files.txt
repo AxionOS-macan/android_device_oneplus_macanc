@@ -1795,6 +1795,10 @@ odm/firmware/ufs/ufs_version_config.xml
 odm/etc/aac_richtap.config|f3e17a5e333ef10af8be3dc0f1ddb889e133c05d
 odm/lib64/libaacvibrator.so:vendor/lib64/libaacvibrator.so
 
+# Vibrator firmware
+odm/firmware/aw8697_haptic_170.bin:vendor/firmware/aw8697_haptic_170.bin
+odm/firmware/aw8697_haptic_170_soft.bin:vendor/firmware/aw8697_haptic_170_soft.bin
+
 # VPU firmware
 vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
