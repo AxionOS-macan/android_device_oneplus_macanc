@@ -55,6 +55,10 @@ $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,HTPR_ENABLE_VALUE,14)
 PRODUCT_PACKAGES += \
     android.hardware.vibrator.service.oplus-richtap
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/oneplus/macanc/configs/vintf/framework_compatibility_matrix.xml
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8850-common/common.mk)
 

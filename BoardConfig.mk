@@ -30,5 +30,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 TARGET_RECOVERY_DENSITY := xxhdpi
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/macanc/BoardConfigVendor.mk

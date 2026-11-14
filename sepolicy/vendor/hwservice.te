@@ -1,0 +1,2 @@
+# Cryptoeng
+type hal_cryptoeng_hwservice, hwservice_manager_type, protected_hwservice;

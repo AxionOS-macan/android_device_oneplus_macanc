@@ -1,0 +1,3 @@
+# Cryptoeng
+/(vendor|system/vendor|odm)/bin/hw/vendor\.oplus\.hardware\.cryptoeng@1\.0-service    u:object_r:hal_cryptoeng_oplus_exec:s0
+/data/vendor_de/[0-9]+/cryptoeng(/.*)?                                                 u:object_r:cryptoeng_data_file:s0

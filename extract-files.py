@@ -45,6 +45,9 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'(fdSupport += )TRUE;', r'\1FALSE;'),
     'odm/etc/init/init.camera_process.rc': blob_fixup()
         .regex_replace('    delete_recursion', '    #delete_recursion'),
+    'odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc': blob_fixup()
+        # Drop the SM6450-only shell if/fi block, which is not valid init syntax
+        .regex_replace(r' +if \[.*\n(?: +(?:copy|chmod|chown) .*\n)* +fi\n', ''),
     (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',
