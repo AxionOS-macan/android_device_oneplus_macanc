@@ -4,11 +4,13 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Enable auxiliary cameras selector. -->
-    <bool name="config_enableAuxCameras">true</bool>
-
-    <!-- List of ID of auxiliary cameras that must be ignored by the app. -->
-     <string-array name="config_ignoredAuxCameraIds">
-         <item>0</item>
-     </string-array>
+    <!-- An array of triplets made of (camera ID, approximate zoom ratio, exact zoom ratio).
+         These values will be added to the lens selector if one or more cameras uses the
+         multi-camera API to let the user select which lens to use.
+         Camera 0 is the logical back camera (ultrawide + main), zoom ratio range 0.6 - 20. -->
+    <string-array name="config_logicalZoomRatios">
+        <item>0</item> <item>0.6</item> <item>0.6</item>
+        <item>0</item> <item>1.0</item> <item>1.0</item>
+        <item>0</item> <item>2.0</item> <item>2.0</item>
+    </string-array>
 </resources>
