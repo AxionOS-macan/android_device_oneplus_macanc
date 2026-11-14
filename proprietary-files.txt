@@ -1811,6 +1811,30 @@ vendor/firmware/vpu40_2v_unsigned.mbn
 vendor/firmware/vpu40_2v_v1.mbn
 vendor/firmware/vpu40_2v_v1_unsigned.mbn
 
+# Widevine (cryptoeng)
+odm/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service
+odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc
+odm/etc/vintf/manifest/manifest_oplus_cryptoeng.xml
+odm/lib64/lib_cryptoeng_api.so
+odm/lib64/libqsee_keybox_ca.so
+odm/lib64/vendor.oplus.hardware.cryptoeng-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so
+odm/lib64/vendor.oplus.hardware.fido.fido2ca-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.fido.fidoca-V1-ndk.so
+vendor/lib64/vendor.qti.hardware.soter-V1-ndk.so
+
+# Widevine (cryptoeng) firmware
+odm/firmware/secure_ta/cryptoeng.b00
+odm/firmware/secure_ta/cryptoeng.b01
+odm/firmware/secure_ta/cryptoeng.b02
+odm/firmware/secure_ta/cryptoeng.b03
+odm/firmware/secure_ta/cryptoeng.b04
+odm/firmware/secure_ta/cryptoeng.b05
+odm/firmware/secure_ta/cryptoeng.b06
+odm/firmware/secure_ta/cryptoeng.b07
+odm/firmware/secure_ta/cryptoeng.b08
+odm/firmware/secure_ta/cryptoeng.mdt
+
 # WiFi
 odm/etc/wifi/wcn7750/bdwlan.elf
 odm/etc/wifi/wcn7750/regdb.bin

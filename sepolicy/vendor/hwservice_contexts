@@ -1,0 +1,2 @@
+# Cryptoeng
+vendor.oplus.hardware.cryptoeng::ICryptoeng    u:object_r:hal_cryptoeng_hwservice:s0

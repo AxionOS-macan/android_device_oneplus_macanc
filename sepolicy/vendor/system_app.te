@@ -1,0 +1,3 @@
+# The stock camera is a client of the device cryptoeng service.
+hal_client_domain(system_app, hal_cryptoeng)
+allow system_app hal_cryptoeng_hwservice:hwservice_manager find;
