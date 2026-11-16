@@ -23,7 +23,7 @@ BYPASS_CHARGE_SUPPORTED := true
 BYPASS_CHARGE_TOGGLE_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
 PERF_DEFAULT_GOV := walt
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_AXFX := true
+TARGET_INCLUDE_AXFX := false
 
 PRODUCT_NAME := lineage_macanc
 PRODUCT_DEVICE := macanc
