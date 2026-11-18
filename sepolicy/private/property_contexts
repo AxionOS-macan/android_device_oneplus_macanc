@@ -1,0 +1,2 @@
+# Dolby Vision GPU rendering
+ro.surface_flinger.supports_dolby_vision u:object_r:surfaceflinger_prop:s0 exact bool

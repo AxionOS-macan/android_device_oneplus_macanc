@@ -1,2 +1,5 @@
+# Dolby Vision
+ro.surface_flinger.supports_dolby_vision=true
+
 # IFAA
 sys.oplus.ifaa.model=ONEPLUS-R24855
