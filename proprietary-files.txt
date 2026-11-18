@@ -1614,6 +1614,9 @@ odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolutio
 vendor/etc/ltm_config_AA607_P_7_A0020_dsc_cmd_mode_panel.xml
 
 # Dolby Vision
+my_product/lib64/libdolbyeffect_4.1.so:system_ext/lib64/libdolbyeffect_4.1.so;DISABLE_CHECKELF
+my_product/lib64/liboplusdolbyeffect_4.1.so:system_ext/lib64/liboplusdolbyeffect_4.1.so;DISABLE_CHECKELF
+my_product/etc/dolby_vision.cfg:odm/etc/dolby/dolby_vision_effect.cfg
 odm/bin/hw/dvs-aidl-service
 odm/etc/dolby/display/dolby_vision.cfg
 odm/etc/dolby/dolby_vision.cfg
