@@ -261,7 +261,7 @@
     </screenBrightnessMap>
 
   <highBrightnessMode enabled="true">
-    <transitionPoint>0.898</transitionPoint>
+    <transitionPoint>0.858539</transitionPoint>
     <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
 
     <minimumLux>10000</minimumLux>
